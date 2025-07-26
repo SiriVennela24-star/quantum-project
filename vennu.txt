@@ -1,6 +1,4 @@
-qiskit
-qiskit-aer
-qiskit[visualization]
+qiskit[visualization,aer]
 matplotlib
 scikit-learn
 numpy
