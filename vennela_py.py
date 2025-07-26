@@ -10,38 +10,17 @@ Original file is located at
 
 # Import necessary libraries
 import streamlit as st
-from qiskit import QuantumCircuit
-from qiskit_aer import Aer
-from qiskit.visualization import plot_histogram
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import numpy as np
 
-st.set_page_config(page_title="Quantum Teleportation ML App", layout="centered")
+st.set_page_config(page_title=" ML App", layout="centered")
 
-st.title("🧠 Quantum Teleportation + ML Visualization App")
+st.title("🧠 ML Visualization App")
 st.write("This app simulates quantum teleportation and classifies Bob’s qubit using a Random Forest model.")
 
-# Quantum teleportation simulation function
-def quantum_teleportation_simulation():
-    qc = QuantumCircuit(3, 3)
-    qc.h(0)
-    qc.cx(1, 2)
-    qc.h(1)
-    qc.cx(0, 1)
-    qc.h(0)
-    qc.measure([0, 1], [0, 1])
-    qc.cx(1, 2)
-    qc.cz(0, 2)
-    qc.measure(2, 2)
-
-    simulator = Aer.get_backend('qasm_simulator')
-    job = execute(qc, simulator, shots=1000)
-    result = job.result()
-    counts = result.get_counts()
-    return counts
 
 # Run when button is clicked
 if st.button("Run Quantum Teleportation"):
