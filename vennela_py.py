@@ -7,12 +7,12 @@ Original file is located at
     https://colab.research.google.com/drive/1hTs1EzW0sM_RGpH0SE2vqBEwNhFuhO71
 """
 
-pip install qiskit
-pip install qiskit-aer
-pip install qiskit[visualization]
-pip install matplotlib
-pip install scikit-learn
-pip install numpy
+!pip install qiskit
+!pip install qiskit-aer
+!pip install qiskit[visualization]
+!pip install matplotlib
+!pip install scikit-learn
+!pip install numpy
 
 pip install streamlit
 
