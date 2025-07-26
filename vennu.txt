@@ -1,0 +1,7 @@
+qiskit
+qiskit-aer
+qiskit[visualization]
+matplotlib
+scikit-learn
+numpy
+streamlit
